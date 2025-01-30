@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+input:focus-visible {
+  outline: 0;
+}
+
+.main {
+  background: url("picture.jpeg");
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.box {
+  min-width: 400px;
+  padding: 10px;
+  box-shadow: 1px 1px 15px rgba(132, 226, 243, 0.9);
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#pass-box {
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  border: rgb(51, 231, 237) solid 2px;
+  border-radius: 4px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  color: rgb(242, 219, 8);
+  font-size: 20px;
+}
+.right {
+  background-color: transparent;
+}
+#total-char{
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+label {
+  user-select: none;
+}
+
+#btn {
+  width: 100%;
+  font-size: 20px;
+  outline: 0;
+  border: 2px solid rgb(16, 196, 236);
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
