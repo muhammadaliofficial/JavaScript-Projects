@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Ali - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">MD</div>
+      <div class="theme-switch">
+        <i class="fas fa-moon"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Hi, I'm Muhammad Ali</h1>
+        <p class="typed-text"></p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill" class="skills">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <h3>HTML5</h3>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS3</h3>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+
+          <h3>TailwindCSS</h3>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-react"></i>
+
+          <h3>React</h3>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+
+          <h3>NextJs</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+      <div class="project-filters">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="web">Web</button>
+        <button data-filter="app">App</button>
+        <button data-filter="ui">UI/UX</button>
+        <button data-filter="react">React</button>
+        <button data-filter="next">NextJs</button>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>My Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-html5"></i>
+          <h3>HTML5</h3>
+          <div class="progress-bar">
+            <div style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS3</h3>
+          <div class="progress-bar">
+            <div style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+          <div class="progress-bar">
+            <div style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <i class="fab fa-react"></i>
+          <h3>React</h3>
+          <div class="progress-bar">
+            <div style="width: 75%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Me</h3>
+          <p>
+            A passionate web developer focused on creating interactive,
+            responsive websites.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Designed and Developed by M Ali © 2024</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="convertor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<div class="container">
+  <h2>Currency Converter</h2>
+  <form>
+      <div class="amount">
+          <p>Enter Amount</p>
+          <input type="number" value="1">
+      </div>
+      <div class="dropdown">
+          <div class="from">
+              <p>From</p>
+              <div class="select-container">
+                  <img src="https://flagsapi.com/US/flat/64.png" alt="flag">
+                  <select></select>
+              </div>
+          </div>
+          <i class="fas fa-exchange-alt"></i>
+          <div class="to">
+              <p>To</p>
+              <div class="select-container">
+                  <img src="https://flagsapi.com/GB/flat/64.png" alt="flag">
+                  <select></select>
+              </div>
+          </div>
+      </div>
+      <div class="result">1 USD = 0.85 EUR</div>
+      <button>Get Exchange Rate</button>
+  </form>
+</div>
+    <script src="convertor.js"></script>
+</body>
+</html>

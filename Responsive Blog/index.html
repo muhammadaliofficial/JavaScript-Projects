@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search posts..." aria-label="Search posts">
+                <button id="search-button">Search</button>
+            </div>
+            <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul id="categories">
+                <li><a href="#" data-category="all">All</a></li>
+                <li><a href="#" data-category="technology">Technology</a></li>
+                <li><a href="#" data-category="lifestyle">Lifestyle</a></li>
+                <li><a href="#" data-category="travel">Travel</a></li>
+            </ul>
+        </aside>
+
+        <section class="blog-posts" id="blog-posts">
+            <!-- Blog posts will be dynamically inserted here -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 My Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Notification</div>
+
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" class="spinner"></div>
+
+    <script src="blog.js"></script>
+</body>
+</html>

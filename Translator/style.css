@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #00796B, #0277BD);
+}
+
+.container {
+    width: 100%;
+    max-width: 690px;
+    padding: 30px;
+}
+
+.wrapper {
+    padding: 28px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.wrapper .text-input {
+    display: flex;
+    gap: 12px;
+}
+
+.text-input textarea {
+    height: 250px;
+    width: 100%;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 16px;
+    resize: none;
+}
+
+.controls, .controls .row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.controls {
+    padding: 12px 0;
+    justify-content: space-between;
+}
+
+.controls .row .icons {
+    display: flex;
+    gap: 8px;
+}
+
+.controls .row .icons i {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0277BD;
+    border-radius: 50%;
+    border: 1px solid #bbb;
+    cursor: pointer;
+}
+
+.controls .row select {
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    outline: none;
+}
+
+.container button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    border: none;
+    background: #0277BD;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (max-width: 660px) {
+    .container {
+        padding: 20px;
+    }
+    .wrapper .text-input {
+        flex-direction: column;
+    }
+    .controls .row select {
+        width: 100%;
+    }
+    .controls .exchange {
+        display: none;
+    }
+}

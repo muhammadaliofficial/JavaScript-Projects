@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>World Clock</h1>
+            <p class="subtitle">Track time across different time zones</p>
+        </header>
+
+        <button class="theme-toggle" id="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </button>
+
+        <div class="clock-grid" id="clocks">
+            <div class="clock-card">
+                <div class="city-info">
+                    <select class="timezone-select">
+                        <option value="local">Local Time</option>
+                    </select>
+                </div>
+                
+                <div class="clock-face">
+                    <div class="numbers"></div>
+                    <div class="hand hour-hand"></div>
+                    <div class="hand minute-hand"></div>
+                    <div class="hand second-hand"></div>
+                    <div class="clock-center"></div>
+                </div>
+                
+                <div class="digital-time">
+                    <span class="time">00:00:00</span>
+                    <span class="date">Loading...</span>
+                </div>
+            </div>
+        </div>
+
+        <button class="add-city-btn" id="add-clock">
+            <i class="fas fa-plus"></i> Add New Clock
+        </button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
